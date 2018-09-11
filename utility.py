@@ -1,19 +1,30 @@
 import pandas as pd
 import numpy as np
 import warnings
-import math, time,json,os
+import math
+import time
+import json
+import os
 from numpy import save,load
 
 DEFAULT_TEMP = 300
 NON_EXISTING_TEMP = -99
 
 def modLog(num):
+    """
+    Returns log if it exist, else returns 0
+    """
     try:
         return log(num)
     except:
         return 0
 
 def loadNumpy(name,path='.'):
+    """
+    Loads numpy file
+    - If no path is provided, the home directory . is considered
+       as default path of numpy file
+    """
     if ".npy" in name:
         fullPath = path+'/'+name
     else:
@@ -22,6 +33,9 @@ def loadNumpy(name,path='.'):
 
 
 def saveNumpy(obj, name, path='.'):
+    """
+    Saves numpy file
+    """
     if ".npy" not in name:
         fullPath = path+'/'+name
         save(fullPath, obj)
@@ -33,6 +47,9 @@ def saveNumpy(obj, name, path='.'):
 
 
 def loadDict(name,path='.'):
+    """
+
+    """
     if ".dict" not in name:
         name += '.dict'
 
@@ -66,7 +83,8 @@ pd.DataFrame.front = front
 pd.DataFrame.back = back
 
 def parse_toolpath(FolderName,FileName,dt):
-    toolpath_raw=pd.read_table(FolderName+FileName,delimiter=r"\s+",header=None, names=['time','x','y','z','state'])
+    complete_filename = os.path.join(FolderName,FileName)
+    toolpath_raw=pd.read_table(complete_filename,delimiter=r"\s+",header=None, names=['time','x','y','z','state'])
     toolpath=[]
     state=[]
     time=0.0
@@ -87,7 +105,9 @@ def parse_toolpath(FolderName,FileName,dt):
     return toolpath, state, endTime
 
 class Coordinate(object):
-
+    """
+    Class for treating voxels in 3-D coordinates
+    """
     def __init__(self, x,y,z ):
         self.X = x
         self.Y = y
@@ -115,7 +135,10 @@ class Coordinate(object):
         return math.sqrt(dx**2 + dy**2 + dz**2)
 
 def getTemperatureInit(p):
-
+    """
+    Initializes the temperature of a voxel
+    - If a temperature does not exist, it sets it with a default temperature NON_EXISTING_TEMP
+    """
     xyzTuple = p.getXYZ()
     if xyzTuple in indices.keys():
         return valueDict[xyzTuple][1]
@@ -123,6 +146,10 @@ def getTemperatureInit(p):
         return NON_EXISTING_TEMP
 
 def getTemperature(p,timestep):
+    """
+    Extracts the temperature of a point
+    - If it does not exist, it is set to a default temperature
+    """
     xyzTuple = p.getXYZ()
     if xyzTuple in indices.keys() and timestep>0:
         dfIndex = indices[xyzTuple]
@@ -132,7 +159,9 @@ def getTemperature(p,timestep):
         return NON_EXISTING_TEMP
 
 def findNeighbors(p):
-
+    """
+    It extracts the neighbors of a given voxel
+    """
     neighbors = []
     ### immediate/adjacent neighbors - 1 degree
     neighbors+= [Coordinate(p.X - 0.5, p.Y, p.Z)]
@@ -174,6 +203,9 @@ def findNeighbors(p):
     return neighbors
 
 def printNeighbors(p):
+    """
+    It prints the temperature of the neighbors
+    """
     neighbors = findNeighbors(p)
     print "The neighbors of point",p," are:"
     print
@@ -195,6 +227,9 @@ def printNeighbors(p):
         print neighbors[i]
 
 def createDictionaries(dataframe):
+    """
+    It creates a dictionary with keys as (x,y,z) and temperature as value
+    """
     start = time.time()
     dictionaryIndices,dictionaryValues = {},{}
     for i in range(len(dataframe)):
@@ -209,7 +244,10 @@ def createDictionaries(dataframe):
 
 
 def findNeighborTemperatures(p,timestep=1):
-
+    """
+    Extracts the temperature of neighboring voxels
+    - Timestep is considered as 1 by default
+    """
     neighbors = []
 
     ### immediate/adjacent neighbors - 1 degree
