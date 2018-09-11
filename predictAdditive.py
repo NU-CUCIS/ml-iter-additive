@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 from time import time
-from utility import loadNumpy
+from additive_util import loadNumpy
 from sklearn.linear_model import LinearRegression,Ridge
 
 

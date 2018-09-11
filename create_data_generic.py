@@ -1,4 +1,4 @@
-from utility import *
+from additive_util import *
 from sys import argv
 warnings.filterwarnings('ignore')
 
@@ -23,7 +23,11 @@ def createDatabase(dataframe,timestep_Start,timestep_Stop):
     for neighbor in range(26):
         neighborColumns += ['T'+str(neighbor+1)+'_t-1']
 
-    columns = ['voxelLat','voxelLong','voxelVert','timestep','x_voxel','y_voxel','z_voxel','layerNum','time_creation','x_laser','y_laser','z_laser','x_distance','y_distance','z_distance','euclidean_distance_laser'] + historicalColumns+ neighborColumns+['T_self']
+    columns = ['voxelLat','voxelLong','voxelVert','timestep',\
+    'x_voxel','y_voxel','z_voxel','layerNum','time_creation',\
+    'x_laser','y_laser','z_laser',\
+    'x_distance','y_distance','z_distance','euclidean_distance_laser'] \
+    + historicalColumns+ neighborColumns+['T_self']
 
     num_timesteps = len(dataframe.loc[0]-4)
     num_voxels = len(dataframe)
@@ -69,23 +73,32 @@ def createDatabase(dataframe,timestep_Start,timestep_Stop):
 
             ##Extract the temperature of the neighboring temperatures
             neighborTemps = findNeighborTemperatures(voxelPosObject,timestep)
+
             for i in range(len(neighborTemps)):
                 key = 'T'+str(i+1)+'_t-1'
                 if neighborTemps[i] == DEFAULT_TEMP:
                     dictionary[key] = NON_EXISTING_TEMP
+
+                    ##If the voxel left or right is missing
                     if i==0 or i==1:
                         dictionary['voxelLat'] = 'missing'
+
+                    ##If the voxel longitudinally is missing
                     if i==3 or i==2:
                         dictionary['voxelLong'] = 'missing'
+
+                    ##i==5 represents the voxel exactly above the voxel
+                    ##It may be absent if it has not yet created
                     if i==5:
                         dictionary['voxelVert'] = 'missing'
 
                 else:
                     dictionary[key] = neighborTemps[i]
 
-            if dictionary['voxelVert'] == 'interior' and dictionary['voxelLong'] == 'interior' and dictionary['voxelLat'] == 'interior':
+            if dictionary['voxelVert'] == 'interior' \
+            and dictionary['voxelLong'] == 'interior' \
+            and dictionary['voxelLat'] == 'interior':
                 dictionary['voxelType'] = 'interior'
-
 
 
             dictionary['T_self'] = T_self
