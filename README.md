@@ -1,1 +1,1 @@
-#Additive
+This software provides the code for an iterative machine learning framework that uses a randomized variant of bagged decision trees for predicting temperature profiles in an additive manufacturing process. 
