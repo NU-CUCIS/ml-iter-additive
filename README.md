@@ -1,4 +1,4 @@
-This software provides the code for an iterative machine learning framework that uses a randomized variant of bagged decision trees for predicting temperature profiles in an additive manufacturing process. 
+This software provides the code for an iterative machine learning framework that uses extremely randomized trees (also known as extreme random forests) for predicting temperature profiles in an additive manufacturing process. 
 
 ## Citation
 If you use this code or data, please cite:
