@@ -10,7 +10,7 @@ A. Paul, M.Mozaffar, Z. Yang, W. Liao, A. Choudhary, J. Cao and A. Agrawal. A re
 
 ## Developer Team & Collaborators 
 
-The code was developed by <a href="http://www.arindampaul.me/">Arindam Paul</a> by the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department at Northwestern University. The development team would like thank the collaborators at Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a>. 
+The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department at Northwestern University. The development team would like thank the collaborators at Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a>. 
 
 
 
