@@ -1,10 +1,17 @@
 This software provides the code for an iterative machine learning framework that uses extremely randomized trees (also known as extreme random forests) for predicting temperature profiles in an additive manufacturing process. 
 
+
 ## Citation
 
 If you use this code or data, please cite:
 
 A. Paul, M.Mozaffar, Z. Yang, W. Liao, A. Choudhary, J. Cao and A. Agrawal. A real-time iterative approach for temperature profile prediction in additive manufacturing processes. 6th IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2019
+
+
+## Developer Team & Collaborators 
+
+The code was developed by <a href="http://www.arindampaul.me/">Arindam Paul</a> during his doctoral research work at <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at Northwestern University. We woild like to thank our collaborators at Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a>. 
+
 
 
 ## Questions/Comments
