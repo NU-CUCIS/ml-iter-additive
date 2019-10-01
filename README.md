@@ -1,5 +1,9 @@
 This software provides the code for an iterative machine learning framework that uses extremely randomized trees (also known as extreme random forests) for predicting temperature profiles in an additive manufacturing process. 
 
+<p align="center">
+  <img src="images/model.png" width="600">
+</p>
+
 
 ## Citation
 
