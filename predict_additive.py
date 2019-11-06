@@ -42,22 +42,23 @@ df_mini = df[df['timestep'] < 500.0]
 
 df_mini.to_csv('data_500_timesteps.csv',index=False)
 print 'Saved'
-# df_train = df_mini[df_mini['timestep'] < 400.0]
-# df_test = df_mini[df_mini['timestep'] >= 400.0]
-# featureColumns = ['timestep','x_distance','y_distance','z_distance','time_creation','Tminus1']+neighborColumns
-#
-# X_train = df_train.loc[:,featureColumns ]
-# y_train = df_train['T_self']
-#
-# X_test = df_test.loc[:,featureColumns ]
-# y_test = df_test['T_self']
-#
-# start = time.time()
-# linear = LinearRegression()
-# linear.fit(X_train,y_train)
-# predicted = linear.predict(X_test)
-# stop = time.time()
-# stop = 5
-# start = 2
-# print 'The prediction took %2f ', (stop -start),'seconds'
-# print r2(y_test,predicted) ,mape(y_test,predicted)
+
+df_train = df_mini[df_mini['timestep'] < 400.0]
+df_test = df_mini[df_mini['timestep'] >= 400.0]
+featureColumns = ['timestep','x_distance','y_distance','z_distance','time_creation','Tminus1']+neighborColumns
+
+X_train = df_train.loc[:,featureColumns ]
+y_train = df_train['T_self']
+
+X_test = df_test.loc[:,featureColumns ]
+y_test = df_test['T_self']
+
+start = time.time()
+linear = LinearRegression()
+linear.fit(X_train,y_train)
+predicted = linear.predict(X_test)
+stop = time.time()
+stop = 5
+start = 2
+print 'The prediction took %2f ', (stop -start),'seconds'
+print r2(y_test,predicted) ,mape(y_test,predicted)

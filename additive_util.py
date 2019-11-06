@@ -48,7 +48,7 @@ def saveNumpy(obj, name, path='.'):
 
 def loadDict(name,path='.'):
     """
-
+    Load Pickle Dictionary 
     """
     if ".dict" not in name:
         name += '.dict'
