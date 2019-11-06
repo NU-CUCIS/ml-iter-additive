@@ -27,7 +27,7 @@ Requirements:
 
 ## Data 
 
-Please find dataset at https://www.dropbox.com/s/vr0yqz0rcufamgs/data_iterative.csv?dl=0 
+Dataset is available at https://www.dropbox.com/s/vr0yqz0rcufamgs/data_iterative.csv?dl=0 
 
 ## Citation
 
@@ -51,4 +51,4 @@ See COPYRIGHT notice in top-level directory.
 
 ## Funding Support
 
-This work was performed under the following financial assistance award 70NANB19H005 from U.S. Department of Commerce, National Institute of Standards and Technology as part of the Center for Hierarchical Materials Design (CHi- MaD). Partial support is also acknowledged from DOE awards DE-SC0014330, DE-SC0019358.
+This work was performed under the following financial assistance award 70NANB19H005 from U.S. Department of Commerce, National Institute of Standards and Technology as part of the Center for Hierarchical Materials Design (CHiMaD). Partial support is also acknowledged from DOE awards DE-SC0014330, DE-SC0019358.
