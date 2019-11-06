@@ -16,7 +16,7 @@ Requirements:
 #### Core Files
 - additive_util.py: Core utility file for processing additive data 
 - create_db_iter_ml.py: Utility file for creating database for iterative modeling 
-- predict_additive.py : Utility and Test file for machine learning on additive Data 
+- predict_additive.py : Utility and test file for machine learning on additive Data 
 
 #### Notebooks
 - analyze&prepare_data.ipynb: Analyze the FEM data and convert it into a structured dataset 
