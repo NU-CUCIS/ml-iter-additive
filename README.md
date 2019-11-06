@@ -4,6 +4,12 @@ This software provides the code for an iterative machine learning framework that
   <img src="iterative_additive.png" width="800">
 </p>
 
+Requirements:
+
+* Scikit-Learn 0.19.1
+* Numpy 1.14
+* Pandas 0.22
+
 
 ## Citation
 
