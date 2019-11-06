@@ -9,7 +9,21 @@ Requirements:
 * Scikit-Learn 0.19.1
 * Numpy 1.14
 * Pandas 0.22
+* XGBoost 0.7 or higher
 
+## Files
+
+#### Core Files
+- additive_util.py: Core utility file for iterative modeling
+- create_db_iter_ml.py: Utility file for creating database for iterative modeling 
+
+#### Notebooks
+- analyze&prepare_data.ipynb: Analyze the FEM data and convert it into a structured dataset 
+- 
+
+## Data 
+
+Please find dataset at https://www.dropbox.com/s/vr0yqz0rcufamgs/data_iterative.csv?dl=0 
 
 ## Citation
 
