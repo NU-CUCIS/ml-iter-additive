@@ -14,12 +14,16 @@ Requirements:
 ## Files
 
 #### Core Files
-- additive_util.py: Core utility file for iterative modeling
+- additive_util.py: Core utility file for processing additive data 
 - create_db_iter_ml.py: Utility file for creating database for iterative modeling 
+- predict_additive.py : Utility and Test file for machine learning on additive Data 
 
 #### Notebooks
 - analyze&prepare_data.ipynb: Analyze the FEM data and convert it into a structured dataset 
-- 
+- prepare_neighbor_info.ipynb: Develop and test functions for incorporating neighbor information 
+- predict_noniterative.ipynb: Explore ML models for non-iterative (standard) approach 
+- predict_iterative.ipynb: Explore ML models for iterative approach 
+- stacked_rnn.ipynb: The stacked RNN approach (used in Manufacturing Letters work) 
 
 ## Data 
 
