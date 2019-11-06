@@ -6,9 +6,9 @@ This software provides the code for an iterative machine learning framework that
 
 Requirements:
 
-Scikit-Learn 0.19.1
-Numpy 1.14
-Pandas 0.22
+* Scikit-Learn 0.19.1
+* Numpy 1.14
+* Pandas 0.22
 
 
 ## Citation
