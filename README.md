@@ -14,7 +14,7 @@ Requirements:
 ## Files
 
 #### Core Files
-- additive_util.py: Core utility file for processing additive data 
+- additive_util.py: Core utility file for this repository (including incorporating neighbor information) 
 - create_db_iter_ml.py: Utility file for creating database for iterative modeling 
 - predict_additive.py : Utility and test file for machine learning on additive Data 
 
@@ -44,9 +44,7 @@ The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS
 ## Questions/Comments
 
 email: apaul@u.northwestern.edu
-
 Copyright (C) 2019, Northwestern University.
-
 See COPYRIGHT notice in top-level directory.
 
 ## Funding Support
