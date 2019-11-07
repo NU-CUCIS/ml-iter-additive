@@ -43,8 +43,8 @@ The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS
 
 ## Questions/Comments
 
-email: apaul@u.northwestern.edu
-Copyright (C) 2019, Northwestern University.
+email: apaul@u.northwestern.edu<br/>
+Copyright (C) 2019, Northwestern University.<br/>
 See COPYRIGHT notice in top-level directory.
 
 ## Funding Support
