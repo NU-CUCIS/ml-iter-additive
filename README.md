@@ -39,7 +39,15 @@ A. Paul, M.Mozaffar, Z. Yang, W. Liao, A. Choudhary, J. Cao and A. Agrawal. A re
 
 ## Developer Team & Collaborators 
 
-The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department in Northwestern University. The development team would like thank the collaborators at Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a>. 
+The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department in Northwestern University. 
+
+1. Arindam Paul (arindam.paul@eecs.northwestern.edu)
+2. Zijiang Yang (zijiangyang2016@u.northwestern.edu)
+3. Ankit Agrawal (ankitag@eecs.northwestern.edu)
+4. Wei-keng Liao (wkliao@eecs.northwestern.edu)
+5. Alok Choudhary (choudhar@eecs.northwestern.edu)
+
+The development team would like thank the collaborators <a href="https://www.linkedin.com/in/mojtaba-mozaffar-08b95b106/">Mojtaba Mozaffar</a> and <a href="http://ampl.mech.northwestern.edu/faculty/jian-cao/index.html">Prof. Jian Cao </a> from Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a> for providing data as well as domain expertise for manufacturing. 
 
 
 ## Questions/Comments
