@@ -47,7 +47,7 @@ The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS
 4. Wei-keng Liao (wkliao@eecs.northwestern.edu)
 5. Alok Choudhary (choudhar@eecs.northwestern.edu)
 
-The development team would like thank the collaborators <a href="https://www.linkedin.com/in/mojtaba-mozaffar-08b95b106/">Mojtaba Mozaffar</a> and <a href="http://ampl.mech.northwestern.edu/faculty/jian-cao/index.html">Prof. Jian Cao </a> from Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a> for providing data as well as domain expertise for manufacturing. 
+The development team would like thank the collaborators <a href="https://www.linkedin.com/in/mojtaba-mozaffar-08b95b106/">Mojtaba Mozaffar</a> and <a href="http://ampl.mech.northwestern.edu/faculty/jian-cao/index.html">Prof. Jian Cao </a> from Northwestern's <a href="http://ampl.mech.northwestern.edu/">Advanced Manufacturing Processes Laboratory</a>. 
 
 
 ## Questions/Comments
