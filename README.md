@@ -16,15 +16,12 @@ Requirements:
 
 #### Core Files
 - additive_util.py: Core utility file for this repository (including incorporating neighbor information) 
-- create_db_iter_ml.py: Utility file for creating database for iterative modeling 
-- predict_additive.py : Utility and test file for machine learning on additive Data 
+
 
 #### Notebooks
-- analyze&prepare_data.ipynb: Analyze the FEM data and convert it into a structured dataset 
-- prepare_neighbor_info.ipynb: Develop and test functions for incorporating neighbor information 
-- predict_noniterative.ipynb: Explore ML models for non-iterative (standard) approach 
-- predict_iterative.ipynb: Explore ML models for iterative approach 
-- stacked_rnn.ipynb: The stacked RNN approach (used in Manufacturing Letters work) 
+- predict_cube.ipynb
+- predict_date_cube.ipynb
+- predict_cube_iterative.ipynb
 
 ## Data 
 
@@ -42,7 +39,7 @@ A. Paul, M.Mozaffar, Z. Yang, W. Liao, A. Choudhary, J. Cao and A. Agrawal. A re
 The code was developed by the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department in Northwestern University. 
 
 1. Arindam Paul (arindam.paul@eecs.northwestern.edu)
-2. Zijiang Yang (zijiangyang2016@u.northwestern.edu)
+2. Jagat Sesh Challa (jagatsesh@northwestern.edu)
 3. Ankit Agrawal (ankitag@eecs.northwestern.edu)
 4. Wei-keng Liao (wkliao@eecs.northwestern.edu)
 5. Alok Choudhary (choudhar@eecs.northwestern.edu)
