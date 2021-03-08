@@ -11,7 +11,6 @@ DEFAULT_TEMP = 300
 # NON_EXISTING_TEMP = -99
 NON_EXISTING_TEMP = 300
 
-
 class Coordinate(object):
     """
     Class for treating voxels in 3-D coordinates
